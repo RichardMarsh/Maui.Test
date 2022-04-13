@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Maui.Test.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Maui.Test"
+    Shell.FlyoutBehavior="Disabled">
+
+	<TabBar>
+		<ShellContent
+        Title="Hello, World!"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" >
+			<ShellContent.Icon>
+				<FontImageSource FontFamily="FontIcon" Glyph="&#xe900;" />
+			</ShellContent.Icon>
+
+		</ShellContent>
+
+		<ShellContent
+        Title="Hello, World!"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" >
+			<ShellContent.Icon>
+				<FontImageSource FontFamily="FontIcon" Glyph="&#xe908;" />
+			</ShellContent.Icon>
+
+		</ShellContent>
+
+		<ShellContent
+        Title="Hello, World!"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" >
+			<ShellContent.Icon>
+				<FontImageSource FontFamily="FontIcon" Glyph="&#xe958;"/>
+			</ShellContent.Icon>
+
+		</ShellContent>
+	</TabBar>
+
+</Shell>
